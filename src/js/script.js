@@ -35,14 +35,14 @@ function init() {
 */
 	camera.position.x = 0;
 	camera.position.y = 0;
-	camera.position.z = 3;
+	camera.position.z = 8;
 	camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 	var render = function () {
 		requestAnimationFrame(render);
 
-		if (T != t / 100000) {
-			T = t / 100000;
+		if (T != t / 1) {
+			T = t / 1;
 			$.each(astres, function(i, astre) {
 				astre.setPosition(T);
 			});
